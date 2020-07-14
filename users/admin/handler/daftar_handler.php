@@ -88,18 +88,18 @@
         </div>
       </li>
 
-       <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-file-archive"></i>
           <span>Rapat</span>
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            
+
             <a class="collapse-item" href="../rapat/tambah_rapat.php">Buat Rapat</a>
             <a class="collapse-item" href="../rapat/daftar_rapat.php">Jadwal Rapat</a>
             <a class="collapse-item" href="../rapat/presensi.php">Presensi</a>
-  
+
           </div>
         </div>
       </li>
@@ -111,17 +111,17 @@
         </a>
         <div id="collapsePagesq" class="collapse" aria-labelledby="headingPagesq" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            
+
             <a class="collapse-item" href="../peserta/tambah_peserta.php">Tambah Peserta</a>
             <a class="collapse-item" href="../peserta/daftar_peserta.php">Daftar Peserta</a>
-  
+
           </div>
         </div>
       </li>
 
 
       <!-- Nav Item - Pages Collapse Menu -->
-     
+
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="../index.php">
@@ -333,18 +333,19 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-			<!-- Page Heading -->
+          <!-- Page Heading -->
 
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-header"><h3>Daftar Handler</h3></div>
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="d-inline">Daftar Handler</h3>
+                  <a class="btn btn-success d-inline float-right" href="tambah_handler.php"> <i class="fas fa-plus-square"></i> Tambah Handler </a>
+                </div>
 
                 <div class="card-body">
-                           
-                  <div class="container">
 
-                    <center><a class="btn btn-dark" href="tambah_handler.php"> Tambah Handler </a></center>
+                  <div class="container">
 
                     <br>
                     <table class="table table-bordered" width="100%">
@@ -357,89 +358,89 @@
                         <th>Opsi</th>
                       </tr>
                       <?php foreach ($data_handler as $handler) : ?>
-                        <tr align="center">
+                      <tr align="center">
                       <tr>
                         <?php if ($handler['level'] == "1"): ?>
-                          
+
                         <td style="text-align: center"><?php $z++; echo $z ?></td>
                         <td><?php echo $handler['username'] ?></td>
                         <td><?php echo $handler['nama'] ?></td>
                         <td><?php echo $handler['jabatan'] ?></td>
                         <td><?php echo $handler['no_hp'] ?></td>
-                        </td> 
+                        </td>
                         <td>
-                          <a class="btn btn-warning btn-sm" href="edit_handler.php?id=<?php echo $handler['id']; ?>">Edit&nbsp;</a>
-                          <a class="btn btn-danger btn-sm" href="hapus_handler.php?id=<?php echo $handler['id']; ?>" onclick="return confirm('Apakah Anda yakin akan menghapus data?');">Hapus</a>
+                          <a class="btn btn-warning btn-sm" href="edit_handler.php?id=<?php echo $handler['id']; ?>"> <i class="fas fa-pen-square"></i> </a>
+                          <a class="btn btn-danger btn-sm" href="hapus_handler.php?id=<?php echo $handler['id']; ?>" onclick="return confirm('Apakah Anda yakin akan menghapus data?');"><i class="fas fa-minus-square"></i></a>
                         </td>
                         <?php endif ?>
                       </tr>
-                    <?php endforeach ?>
+                      <?php endforeach ?>
                     </table>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        <div class="row">
+          <div class="row">
 
-      <!-- End of Main Content -->
+            <!-- End of Main Content -->
 
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+              <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                  <span>Copyright &copy; Your Website 2019</span>
+                </div>
+              </div>
+            </footer>
+            <!-- End of Footer -->
+
+          </div>
+          <!-- End of Content Wrapper -->
+
+        </div>
+        <!-- End of Page Wrapper -->
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+          <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!-- Logout Modal-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="../../../index.php">Logout</a>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-      <!-- End of Footer -->
 
-    </div>
-    <!-- End of Content Wrapper -->
+        <!-- Bootstrap core JavaScript-->
+        <script src="../../../vendor/jquery/jquery.min.js"></script>
+        <script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  </div>
-  <!-- End of Page Wrapper -->
+        <!-- Core plugin JavaScript-->
+        <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+        <!-- Custom scripts for all pages-->
+        <script src="../../../js/sb-admin-2.min.js"></script>
 
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="../../../index.php">Logout</a>
-        </div>
-      </div>
-    </div>
-  </div>
+        <!-- Page level plugins -->
+        <script src="../../../vendor/chart.js/Chart.min.js"></script>
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="../../../vendor/jquery/jquery.min.js"></script>
-  <script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="../../../js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="../../../vendor/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="../../../js/demo/chart-area-demo.js"></script>
-  <script src="../../../js/demo/chart-pie-demo.js"></script>
+        <!-- Page level custom scripts -->
+        <script src="../../../js/demo/chart-area-demo.js"></script>
+        <script src="../../../js/demo/chart-pie-demo.js"></script>
 
 </body>
 

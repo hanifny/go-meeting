@@ -100,7 +100,6 @@
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-
             <a class="collapse-item" href="tambah_rapat.php">Buat Rapat</a>
             <a class="collapse-item" href="daftar_rapat.php">Jadwal Rapat</a>
             <a class="collapse-item" href="presensi.php">Presensi</a>
@@ -127,7 +126,6 @@
 
 
       <!-- Nav Item - Pages Collapse Menu -->
-
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="index.php">

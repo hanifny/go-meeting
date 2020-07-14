@@ -7,5 +7,6 @@ $user = "root";
 $pass = "";
 $database = "gomeeting";
 
+
 $db = mysqli_connect($host, $user, $pass, $database) or die("gagal koneksi ke database");
 ?>

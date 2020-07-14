@@ -316,7 +316,7 @@
 			<!-- Page Heading -->
 
         <div class="row justify-content-center">
-          <div class="col-md-8">
+          <div class="col-md-12">
             <div class="card">
               <div class="card-header"> <h3>Daftar Event</h3></div>
 
@@ -329,16 +329,16 @@
                         <th>No</th>
                         <th>Event</th>
                         <th>Deskripsi</th>
-                        <th>Tanggal</th>
                       </tr>
                       <?php foreach ($data_event as $event) : ?>
                         <tr align="center">
                       <tr>
                         <td style="text-align: center"><?php $z++; echo $z ?></td>
                         <td><?php echo $event['nama'] ?></td>
-                        <td style="text-align:justify;"><?php echo $event['deskripsi'] ?></td>
-                        <td style="text-align: justify;"><?php echo $event['tanggal'] ?></td>
-                        </td> 
+                        <td style="text-align:justify;"><?php echo $event['deskripsi'] ?><br><br>
+                        Tanggal pelaksanaan : <?php echo $event['tanggal'] ?>
+                      </td>
+                         
                       </tr>
                     <?php endforeach ?>
                     </table>

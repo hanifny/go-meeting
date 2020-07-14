@@ -316,7 +316,7 @@
 			<!-- Page Heading -->
 
         <div class="row justify-content-center">
-          <div class="col-md-8">
+          <div class="col-md-12">
             <div class="card">
               <div class="card-header"><h3>Daftar Peserta</h3></div>
 
@@ -342,7 +342,7 @@
                           <td><?php echo $peserta['username'] ?></td>
                           <td><?php echo $peserta['nama'] ?></td>
                           <td><?php echo $peserta['jabatan'] ?></td>
-                          <td><?php echo $peserta['no_hp'] ?></td>
+                          <td align="center"><?php echo $peserta['no_hp'] ?></td>
                           </td> 
                         
                         <?php endif ?>

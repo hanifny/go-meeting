@@ -354,12 +354,21 @@ $event = mysqli_fetch_assoc($result_);
 
                       <div class="container">
 
+<<<<<<< HEAD
                         <a class="btn btn-primary" href="daftar_rapat.php"> <i class="fas fa-chevron-left"></i> Kembali </a>
                         <br><br>
                         <h3>Event : <?php echo $event['nama'] ?></h3>
                         <h6 class="d-inline"><b> Rapat &emsp;&emsp;: <?php echo $event['tanggal'] ?></b></h6>
                         <a class="btn btn-success ml-3 d-inline float-right" href="buat_notulensi.php?id=<?php echo $id; ?>"> <i class="fas fa-plus-square"></i> Notulensi </a>
                         <br><br>
+=======
+                        <a class="btn btn-primary" href="daftar_rapat.php"> Kembali </a>
+                        <br><br>
+                        <h3>Event : <?php echo $event['nama'] ?></h3>
+                        <h6><b> Rapat &emsp;&emsp;: <?php echo $event['tanggal'] ?></b></h6>
+                        <br><br>
+                        <center><a class="btn btn-dark" href="buat_notulensi.php?id=<?php echo $id; ?>"> Buat Notulensi </a></center><br>
+>>>>>>> 2b64997570fe9a2dac2f0f07af3962acf803d46f
                         <table style="table-layout: fixed;  width="100%"" class="table table-bordered">
                           <tr bgcolor="#FFF" align="center">
                             <th>Notulensi</th>
